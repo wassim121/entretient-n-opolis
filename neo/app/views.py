@@ -310,7 +310,7 @@ class BookCreateView2(APIView):
 
 
 
-class Book2(APIView):
+class Book2_all_view(APIView):
     def get(self, request, *args, **kwargs):
         books = Book.objects.all()
         Authors = Author.objects.all()
@@ -318,7 +318,7 @@ class Book2(APIView):
         BookInstances = BookInstance.objects.all()
         return render(request, 'liste2.html',   {'books': books})
 
-class auth2(APIView):
+class auth2_all_view(APIView):
     def get(self, request, *args, **kwargs):
         books = Book.objects.all()
         Authors = Author.objects.all()
@@ -326,7 +326,7 @@ class auth2(APIView):
         BookInstances = BookInstance.objects.all()
         return render(request, 'liste3.html',    {'Authors': Authors})
 
-class genre2(APIView):
+class genre2_all_view(APIView):
     def get(self, request, *args, **kwargs):
         books = Book.objects.all()
         Authors = Author.objects.all()
@@ -334,7 +334,7 @@ class genre2(APIView):
         BookInstances = BookInstance.objects.all()
         return render(request, 'liste1.html',  {'Genres': Genres})
 
-class inst2(APIView):
+class inst2_all_view(APIView):
     def get(self, request, *args, **kwargs):
         books = Book.objects.all()
         Authors = Author.objects.all()

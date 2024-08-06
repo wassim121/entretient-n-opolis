@@ -1,0 +1,23 @@
+
+
+<h2>authors</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>first_name</th>
+            <th>last_name</th>
+            <th>date_of_birth</th>
+            <th>isbn</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for a in Authors %}
+            <tr>
+                <td>{{ a.first_name }}</td>
+                <td>{{ a.last_name }}</td>
+                <td>{{ a.date_of_birth }}</td>
+                <td>{{ a.date_of_death }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,55 @@
+{% block title %}
+
+{% endblock title %}
+{% block content %}
+    <h5>Hello, this is interface admin</h5>
+{% endblock content %}
+<div class="myForm">
+<h5>Hello, this is form author</h5>
+<form action="{% url 'create_author' %}" method="post">
+    <label for="STATUS_CHOICES"> name: </label><input id="your_name" type="text" name="your_name" value="">
+    <label for="last_name"> last_name: </label><input id="last_name" type="text" name="last_name" value="">
+    <label for="birhday"> date birhday: </label><input id="birhday" type="date" name="birhday" value="">
+    <label for="date_of_death"> date_of_death: </label><input id="date_of_death" type="date" name="date_of_death" value="">
+    <input type="submit" value="OK">
+</form><br>
+<h5>Hello, this is form BOOK</h5>
+<form action="/your-name/" method="post">
+    <label for="title"> name: </label><input id="title" type="text" name="title" value="">
+    <label for="author"> author: </label><input id="author" type="text" name="author" value="">
+    <label for="summary"> date summary: </label><input id="summary" type="texte" name="summary" value="">
+    <label for="isbn"> isbn: </label><input id="isbn" type="texte" name="isbn" value="">
+    <input type="submit" value="OK">
+</form><br>
+<h5>Hello, this is form Genre</h5>
+<form action="/your-name/" method="post">
+    <label for="name"> name: </label><input id="name" type="texte" name="name" value="">
+    <input type="submit" value="OK">
+</form><br>
+<h5>Hello, this is form BookInstance</h5>
+<form action="/your-name/" method="post">
+    <label for="STATUS_CHOICES"> name: </label><input id="STATUS_CHOICES" type="text" name="STATUS_CHOICES" value="">
+    <label for="book"> book: </label><input id="book" type="text" name="book" value="">
+    <label for="imprint"> date imprint: </label><input id="imprint" type="texte" name="imprint" value="">
+    <label for="due_back"> due_back: </label><input id="due_back" type="date" name="due_back" value="">
+    <label for="status"> status: </label><input id="status" type="date" name="status" value="">
+    <input type="submit" value="OK">
+</form><br>
+
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+    
+    
+    </script>
+
+
+
+
+   
